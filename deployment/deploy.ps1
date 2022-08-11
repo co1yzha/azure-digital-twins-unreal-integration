@@ -430,8 +430,8 @@ function New-Deployment() {
     #endregion
 
     #region create deployment
-    $template = Join-Path $root_path "deployment" "azuredeploy.bicep"
-    $parameters = Join-Path $root_path "deployment" "azuredeploy.parameters.json"
+    $template = Join-Path $root_path "deployment\azuredeploy.bicep"
+    $parameters = Join-Path $root_path "deployment\azuredeploy.parameters.json"
     $deployment_id = "$($script:project_name)-$($script:env_hash)"
 
     # JH 2022-08-09
